@@ -1,7 +1,7 @@
 *{margin: 0;padding: 0;box-sizing: border-box;}
 
 body{
-    background: #ffffff url("vapowavecar.jpg");
+    background: #ffffff url("/./images/login/vapowavecar.jpg");
 }
 form{
     background-color: white;
@@ -26,6 +26,12 @@ form input[type=password]{
     padding-left: 10px;
     margin: 10px 0;
 }
+#novo{
+    margin-left: 0px;
+}
+#senha{
+    margin-left: 215px;
+}
 form button{
     color: white;
     width: 100%;
@@ -42,9 +48,7 @@ form input[type=text],
 form input[type=password]:focus{
     outline: 0;
 }
-a:link{
-    color: #0032d4;
-}
-a:visited{
-    color: #626988;
+
+#botaoLogar{
+    color: gray;
 }

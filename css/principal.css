@@ -1,0 +1,68 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+body{
+    background: #ffffff url("/./images/screens/vaporwavemountains.jpg");
+}
+form{
+    background-color: white;
+    max-width: 400px;
+    width: 500%;
+    height: 35%;
+    padding: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+form h3{
+    position: fixed;
+    top: 60px;
+    left: 135px;
+    color: purple;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#esquerda{
+    position: fixed;
+    top: 10px;
+    left: 15px;
+}
+#monarca{
+    position: fixed;
+    top: 25px;
+    left: 140px;
+}
+#direita{
+    position: fixed;
+    top: 10px;
+    right: 15px;
+}
+#cadastros{
+    font-size: 20px;
+    position: fixed;
+    top: 100px;
+    left: 155px;
+}
+#locacao{
+    font-size: 20px;
+    position: fixed;
+    top: 130px;
+    left: 155px;
+}
+#devolucao{
+    font-size: 20px;
+    position: fixed;
+    top: 160px;
+    left: 155px;
+}
+#acervo{
+    font-size: 20px;
+    position: fixed;
+    top: 190px;
+    left: 155px;
+}
+#sobre{
+    font-size: 20px;
+    position: fixed;
+    top: 220px;
+    left: 155px;
+}
