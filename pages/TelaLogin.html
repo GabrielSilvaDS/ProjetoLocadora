@@ -3,35 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>Tela de Login</title>
-<!--Link para um arquivo css onde é aplicada a estilização da página-->
     <link rel="stylesheet" href="/./css/login.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
+    <div id="posicao">
+        <div class="wrapper">
+            <div class="icon discord">
+                <div class="tooltip">Discord</div>
+                <a href="https://discord.gg/ws5WEvGjts" target="_blank" class="cor"><span><i class="fab fa-discord"></i></span></a>
+            </div>
+            <div class="icon twitter">
+                <div class="tooltip">Twitter</div>
+                <a href="https://twitter.com/AlbinaHiena" target="_blank" class="cor"><span><i class="fab fa-twitter"></i></span></a>
+            </div>
+            <div class="icon instagram">
+                <div class="tooltip">Instagram</div>
+                <a href="https://www.instagram.com/xscott_james/" target="_blank" class="cor"><span><i class="fab fa-instagram"></i></span></a>
+            </div>
+            <div class="icon github">
+                <div class="tooltip">GitHub</div>
+                <a href="https://github.com/GabrielSilvaDS" target="_blank" class="cor"><span><i class="fab fa-github"></i></span></a>
+            </div>
+            <div class="icon youtube">
+                <div class="tooltip">Youtube</div>
+                <a href="https://www.youtube.com/channel/UCGyrm_C8dkdsR9Ndip172cw" target="_blank" class="cor"></a><span><i class="fab fa-youtube"></i></span>
+            </div>
+        </div>
+    </div>
     <form>
         <h3>Login</h3>
-        <!--inputs para colocar o usuário e a senha-->
-        <input type="text" name="usuario" placeholder="Usuário...">
-        <input type="password" name="senha" placeholder="Senha...">
-        <!--Botões para fazer cadastro e recuperar a senha-->
+        <input type="text" name="usuario" placeholder="Usuário..." class="user">
+        <input type="password" name="senha" placeholder="Senha..." class="password">
         <a href="./register/CadastroUsuario.html" id="novo">Novo</a>
         <a href="RecuperarSenha.html" id="senha">Esqueceu a senha ?</a>
         <br><br>
-        <!--Botão para efetuar login-->
-        <button><a id="botaoLogar" href="TelaPrincipal.html">Logar</a></button>
+        <button><a class="btn" href="TelaPrincipal.html"><span>Logar</span></a></button>
     </form>
 </body>
 </html>
-
-
-<!-- 
-    Code sem Css (antigo)
-    <form action="TelaLogin.html"><fieldset>
-        <legend><h1>Login</h1></legend>
-        <input type="text" name="" placeholder="Usuário...">
-        <br><br>
-        <input type="password" name="" placeholder="Senha...">
-        <button><a href="TelaPrincipal.html">Entrar</a></button>
-        <br><br>
-        <a href="CadastroUsuario.html">Novo</a>
-        <a href="RecuperarSenha.html">Esqueceu a Senha ?</a>
-    </fieldset></form>-->

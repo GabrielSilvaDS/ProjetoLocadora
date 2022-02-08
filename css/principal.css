@@ -1,9 +1,26 @@
-*{margin: 0; padding: 0; box-sizing: border-box;}
+@font-face {
+    font-family: "EBG";
+    src: url(/fonts/EBGaramond-Regular.ttf);
+}
+@font-face {
+    font-family: "Kalam";
+    src: url(/fonts/Kalam-Regular.ttf);
+}
+@font-face {
+    font-family: "Dancing";
+    src: url(/fonts/DancingScript-VariableFont_wght.ttf);
+}
+*{margin: 0; padding: 0; box-sizing: border-box}
 
 body{
-    background: #ffffff url("/./images/screens/vaporwavemountains.jpg");
+    background-image: url("/./images/screens/vaporwavemountains.jpg");
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color:black;
 }
 .principal{
+    box-shadow: 1px 1px 1px 1px black;
     background-color: white;
     max-width: 400px;
     width: 500%;
@@ -16,9 +33,9 @@ body{
 h3{
     position: fixed;
     top: 60px;
-    left: 135px;
+    left: 145px;
     color: purple;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "EBG";
 }
 #esquerda{
     position: fixed;
@@ -26,10 +43,11 @@ h3{
     left: 15px;
 }
 #monarca{
-    font-size: 20px;
+    font-size: 25px;
     position: fixed;
     top: 25px;
-    left: 125px;
+    left: 120px;
+    font-family: "Dancing";
 }
 #direita{
     position: fixed;

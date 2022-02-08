@@ -6,44 +6,46 @@
     <link rel="stylesheet" href="/./css/cadastrosfilmes.css">
 </head>
 <body>
-<a href="../TelaPrincipal.html">Locadora Monarca</a>
-
-<a href="Cadastros.html"><img src="/./images/SETA Esquerda.png" alt="seta esquerda" width="50" height="50" /></a>
-
-Cadastro de Filmes
-
-<a href=""><img src="/./images/SETA Direita.png" alt="seta esquerda" width="50" height="50" /></a>
-Título
-<input type="text" id="Título">
-<br><br>
-Gênero
-<select name="Gênero" id="Gênero">
-<option>----------</option>
-<option>Ação</option>
-<option>Terror</option>
-<option>Ficção Científica</option>
-<option>Comédia</option>
-<option>Suspense</option>
-<option>Romance</option>
-</select>
-<br><br>
-Prêmios:
-<br>
-<input type="checkbox" id="Roteiro" name="Prêmio">Melhor Roteiro
-<br>
-<input type="checkbox" id="Sonora" name="Prêmio">Melhor Trilha Sonora
-<br>
-<input type="checkbox" id="Atuação" name="Prêmio">Melhor Atuação
-<br>
-<input type="checkbox" id="Figurino" name="Prêmio">Melhor Figurino
-<br>
-<input type="checkbox" id="Efeitos" name="Prêmio">Melhor Efeito Visual
-<br>
-<input type="checkbox" id="Arte" name="Prêmio">Melhor Direção de Arte
-<h3>Descrição</h3>
-<textarea name="Descrição" id="Desc" cols="30" rows="5"></textarea>
-<br><br>
-<button><a href="../TelaPrincipal.html">Cadastrar</a></button>
-<input type="reset" value="Limpar">
+    <form>
+        <div>
+            <a href="Cadastros.html"><img src="/./images/SETA Esquerda.png" alt="seta esquerda" width="50" height="50" id="esquerda"/></a>
+            <a href="../TelaPrincipal.html" id="monarca">Locadora Monarca</a>
+            <a href=""><img src="/./images/SETA Direita.png" alt="seta esquerda" width="50" height="50" id="direita"/></a>
+        </div>
+        <h3>Cadastro de Filmes</h3>
+        <h4>Título</h4>
+        <input type="text" id="Título" class="campo">
+        <br><br>
+        <h4>Gênero</h4>
+        <select name="Gênero" id="Gênero">
+        <option>----------</option>
+        <option>Ação</option>
+        <option>Terror</option>
+        <option>Ficção Científica</option>
+        <option>Comédia</option>
+        <option>Suspense</option>
+        <option>Romance</option>
+        </select>
+        <br><br>
+        <h4>Prêmios:</h4>
+        <br>
+        <input type="checkbox" id="Roteiro" name="Prêmio"> Melhor Roteiro
+        <br>
+        <input type="checkbox" id="Sonora" name="Prêmio"> Melhor Trilha Sonora
+        <br>
+        <input type="checkbox" id="Atuação" name="Prêmio"> Melhor Atuação
+        <br>
+        <input type="checkbox" id="Figurino" name="Prêmio"> Melhor Figurino
+        <br>
+        <input type="checkbox" id="Efeitos" name="Prêmio"> Melhor Efeito Visual
+        <br>
+        <input type="checkbox" id="Arte" name="Prêmio"> Melhor Direção de Arte
+        <br><br>
+        <h4>Descrição</h4>
+        <textarea name="Descrição" id="Desc" cols="30" rows="5" class="campo"></textarea>
+        <br><br>
+        <button><a href="../TelaPrincipal.html" class="botao">Cadastrar</a></button>
+        <input type="reset" value="Limpar" class="botaol">
+    </form>
 </body>
 </html>
