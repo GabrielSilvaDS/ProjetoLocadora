@@ -7,7 +7,7 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
-<body>
+<body onload="carregar()">
     <div id="posicao">
         <div class="wrapper">
             <div class="icon discord">
@@ -36,10 +36,11 @@
         <h3>Login</h3>
         <input type="text" name="usuario" placeholder="Usuário..." class="user">
         <input type="password" name="senha" placeholder="Senha..." class="password">
-        <a href="./register/CadastroUsuario.html" id="novo">Novo</a>
-        <a href="RecuperarSenha.html" id="senha">Esqueceu a senha ?</a>
-        <br><br>
-        <button><a class="btn" href="TelaPrincipal.html"><span>Logar</span></a></button>
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-6" id="esquecer"> <a href="RecuperarSenha.html" class="btn btn-sm animated-button victoria-two" id="esquecer2">Esqueceu a senha ?</a> </div>
+          <div class="col-md-3 col-sm-3 col-xs-6" id="novo"> <a href="/pages/register/CadastroUsuario.html" class="btn btn-sm animated-button victoria-three" id="novo2">Novo</a> </div>
+          <div class="col-md-3 col-sm-3 col-xs-6" id="logar"> <a href="TelaPrincipal.html" class="btn btn-sm animated-button victoria-one" id="logar2">Logar</a> </div>
+        </div>
     </form>
 </body>
 </html>
