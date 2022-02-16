@@ -12,7 +12,7 @@
 }
 *{margin: 0; padding: 0; box-sizing: border-box}
 body{
-    background-color: #948e8e;
+    background-color: gray;
 }
 .principal{
     box-shadow: 1px 1px 1px 1px black;
@@ -29,7 +29,7 @@ h3{
     font-size: 20px;
     position: fixed;
     top: 60px;
-    left: 145px;
+    left: 140px;
     color: purple;
     font-family: "EBG";
 }
@@ -37,7 +37,7 @@ h3{
     font-size: 25px;
     position: fixed;
     top: 25px;
-    left: 120px;
+    left: 115px;
     font-family: "Dancing";
 }
 .btn2:link,
@@ -98,30 +98,34 @@ h3{
     padding: 5px;
     font-size: 12px;
     width: 100px;
-    left: 5px;
+    left: -5px;
     top: -50px;
 }
 #locacao2{
     padding: 5px;
     font-size: 12px;
+    left: -5px;
     width: 90px;
     top: 10px;
 }
 #devolucao2{
     padding: 5px;
     font-size: 12px;
+    left: -10px;
     width: 100px;
     top: 20px;
 }
 #acervo2{
     padding: 5px;
     font-size: 12px;
+    left: 5px;
     width: 70px;
     top: 30px;
 }
 #sobre2{
     padding: 5px;
     font-size: 12px;
+    left: 10px;
     top: 40px;
 }
 a.animated-button:link, a.animated-button:visited {

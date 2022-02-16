@@ -3,60 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <title>Cadastro de Usuários</title>
+    <link rel="stylesheet" href="/css/cadastrosusuarios.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
-    <table border='1'>
-        <tr>
-            <th colspan="3"><a href="../TelaPrincipal.html">Locadora Monarca</a></th>
-        </tr>
-        <tr>
-            <td>
-                <a href="Cadastros.html"><img src="/./images/SETA Esquerda.png" alt="seta esquerda" width="50" height="50" /></a>
-            </td>
-            <th width='70%'>    
-                Cadastro de Usuário
-            </th>
-            <td>    
-                <a href=""><img src="/./images/SETA Direita.png" alt="seta esquerda" width="50" height="50" /></a>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="3">
-                <ul>
-                    <form>
-                    Nome de Usuário:
-                    <input type="text" name="Usuário">
-                    <br><br>
-                    <input type="radio" id="Masculino" name="Sexo"> Masculino
-                    <input type="radio" id="Feminino" name="Sexo"> Feminino
-                    <input type="radio" id="Outros" name="Sexo"> Outros
-                    <br><br>
-                    Preferências:
-                    <br>  
-                    <input type="checkbox" id="Ação" name="Gênero">Ação
-                    <br>
-                    <input type="checkbox" id="Terror" name="Gênero">Terror
-                    <br>
-                    <input type="checkbox" id="FicçãoCientífica" name="Gênero">Ficção Científica
-                    <br>
-                    <input type="checkbox" id="Comédia" name="Gênero">Comédia
-                    <br>
-                    <input type="checkbox" id="Suspense" name="Gênero">Suspense
-                    <br>
-                    <input type="checkbox" id="Romance" name="Gênero">Romance
-                    <br>
-                    <h3>Observações</h3>
-                    <textarea name="Observações" id="Obs" cols="30" rows="5"></textarea>
-                    <br><br>
-                    Email:
-                    <input type="email" id="Email" name="email">
-                    <br><br>
-                    <button><a href="../TelaLogin.html">Cadastrar</a></button>
-                    <input type="reset" value="Limpar">
-                    </form>
-                </ul>
-            </td>
-        </tr>
-    </table>
+    <div id="posicao">
+        <div class="wrapper">
+            <div class="icon discord">
+                <div class="tooltip">Discord</div>
+                <a href="https://discord.gg/ws5WEvGjts" target="_blank" class="cor"><span><i class="fab fa-discord"></i></span></a>
+            </div>
+            <div class="icon twitter">
+                <div class="tooltip">Twitter</div>
+                <a href="https://twitter.com/AlbinaHiena" target="_blank" class="cor"><span><i class="fab fa-twitter"></i></span></a>
+            </div>
+            <div class="icon instagram">
+                <div class="tooltip">Instagram</div>
+                <a href="https://www.instagram.com/xscott_james/" target="_blank" class="cor"><span><i class="fab fa-instagram"></i></span></a>
+            </div>
+            <div class="icon github">
+                <div class="tooltip">GitHub</div>
+                <a href="https://github.com/GabrielSilvaDS" target="_blank" class="cor"><span><i class="fab fa-github"></i></span></a>
+            </div>
+            <div class="icon youtube">
+                <div class="tooltip">Youtube</div>
+                <a href="https://www.youtube.com/channel/UCGyrm_C8dkdsR9Ndip172cw" target="_blank" class="cor"></a><span><i class="fab fa-youtube"></i></span>
+            </div>
+        </div>
+    </div>
+    <form>
+        <div class="principal">
+            <div>
+                <div class="text-box" class="voltar">
+                    <a href="Cadastros.html" class="btn2 btn-white2 btn-animate2"  id="voltar">Voltar</a>
+                </div>
+                <div class="text-box" class="avancar">
+                    <a href="#" class="btn2 btn-white2 btn-animate2" id="avancar">Avançar</a>
+                </div>
+                <a href="TelaPrincipal.html" id="monarca">Locadora Monarca</a>
+            </div>  
+            <h3>Cadastro de Usuário</h3>
+            <h4>Nome de Usuário:</h4>
+            <input type="text" name="Usuário">
+            <br><br>
+            <input type="radio" id="Masculino" name="Sexo"> Masculino
+            <br>
+            <input type="radio" id="Feminino" name="Sexo"> Feminino
+            <br>
+            <input type="radio" id="Outros" name="Sexo"> Outros
+            <br><br>
+            <h4>Preferências:</h4>
+            <div>
+                <input type="checkbox" id="Roteiro" name="Prêmio"> Ação
+            </div>
+            <div>
+                <input type="checkbox" id="Sonora" name="Prêmio"> Terror
+            </div>
+            <div>
+                <input type="checkbox" id="Atuação" name="Prêmio"> Ficção Científica
+            </div>
+            <div>
+                <input type="checkbox" id="Figurino" name="Prêmio"> Comédia
+            </div>
+            <div>
+                <input type="checkbox" id="Efeitos" name="Prêmio"> Suspense
+            </div>
+            <div>
+                <input type="checkbox" id="Arte" name="Prêmio"> Romance
+            </div>
+            <h4>Observações</h4>
+            <textarea name="Observações" id="Obs" cols="30" rows="5"></textarea>
+            <br><br>
+            <h4>Email:</h4>
+            <input type="email" id="Email" name="email">
+            <br><br>
+            <div class="col-md-3 col-sm-3 col-xs-6" id="cadastrar"> <a href="/pages/TelaLogin.html" class="btn btn-sm animated-button victoria-one" id="cadastrar2">Cadastrar</a> </div>
+            <input type="reset" value="Limpar" name="limpar" id="limpar">
+        </div>
+    </form>
+</table>
 </body>
 </html>

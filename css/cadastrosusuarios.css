@@ -4,41 +4,46 @@
 }
 @font-face {
     font-family: "Kalam";
-    src: url(/fonts/Kalam-Regular.ttf);
+    src: url(/fonts/EBGaramond-Regular.ttf);
 }
 @font-face {
     font-family: "Dancing";
     src: url(/fonts/DancingScript-VariableFont_wght.ttf);
 }
-*{margin: 0; padding: 0; box-sizing: border-box}
+*{margin: 0; padding: 0; box-sizing: border-box;}
 body{
-    background-color: #948e8e;
+    background-color: gray;
 }
-.principal{
+form{
     box-shadow: 1px 1px 1px 1px black;
     background-color: white;
     max-width: 400px;
     width: 500%;
-    padding: 150px;
+    padding: 95px;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
 h3{
-    font-size: 20px;
     position: fixed;
     top: 60px;
-    left: 155px;
+    left: 125px;
     color: purple;
+    font-family: "Kalam";
+}
+h4{
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
     font-family: "EBG";
 }
-#monarca{
-    font-size: 25px;
-    position: fixed;
-    top: 25px;
-    left: 115px;
-    font-family: "Dancing";
+input, text, textarea, select{
+    border-radius: 5px;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus{
+	background: rgb(204, 195, 195);
 }
 .btn2:link,
 .btn2:visited {
@@ -94,35 +99,45 @@ h3{
     animation: moveInBottom 5s ease-out;
     animation-fill-mode: backwards;
 }
-#cadastrar2{
-    padding: 5px;
-    font-size: 12px;
-    width: 100px;
-    left: 5px;
-    top: -50px;
+.campo:focus{
+    background: rgb(233, 222, 222);
 }
-#locacao2{
-    padding: 5px;
-    font-size: 12px;
-    width: 90px;
-    top: 10px;
+#monarca{
+    font-family: "Dancing";
+    color: rgb(25, 0, 255);
+    font-size: 25px;
+    position: fixed;
+    top: 25px;
+    left: 115px;
 }
-#devolucao2{
-    padding: 5px;
-    font-size: 12px;
-    width: 100px;
-    top: 20px;
+input[type="checkbox"]{
+    position: relative;
+    width: 40px;
+    height: 20px;
+    -webkit-appearance:none;
+    background: #c6c6c6;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,.2);
 }
-#acervo2{
-    padding: 5px;
-    font-size: 12px;
-    width: 70px;
-    top: 30px;
+input:checked[type="checkbox"]{
+    background: #03a9f4;
 }
-#sobre2{
-    padding: 5px;
-    font-size: 12px;
-    top: 40px;
+input[type="checkbox"]:before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    background: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    transition: .5s;
+}
+input:checked[type="checkbox"]:before{
+    left: 20px;
 }
 a.animated-button:link, a.animated-button:visited {
 	position: relative;
@@ -170,7 +185,7 @@ a.animated-button:link, a.animated-button:visited {
 	margin: -10px auto 0;
 	padding: 14px 15px;
 	color: rgb(0, 0, 0);
-	font-size: 14px;
+	font-size: 12px;
 	border-radius: 0;
 	font-weight: bold;
 	text-align: center;
@@ -194,17 +209,81 @@ a.animated-button.victoria-one:after {
 	-webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
 	transform: translateX(-50%) translateY(-50%) rotate(-25deg);
 }
-#filmes{
-    position: fixed;
-    top: 180px;
-    left: 35%;
+#cadastrar{
     font-size: 20px;
+    position: fixed;
+    top: 85%;
+    left: 60px;
 }
-#usuario{
-    position: fixed;
-    top: 240px;
-    left: 35%;
+#limpar{
+    font-family: "EBG";
     font-size: 20px;
+    position: fixed;
+    top: 35px;
+    left: 110px;
+}
+#limpar, #limpar:visited {
+	position: relative;
+	display: block;
+	margin: -10px auto 0;
+	padding: 14px 15px;
+	color: #fff;
+	font-size: 10px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	border-radius: 0;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+#limpar:after, #limpar:after {
+	content: "";
+	position: absolute;
+	height: 0%;
+	left: 50%;
+	top: 50%;
+	width: 150%;
+	z-index: -1;
+	-webkit-transition: all 0.75s ease 0s;
+	-moz-transition: all 0.75s ease 0s;
+	-o-transition: all 0.75s ease 0s;
+	transition: all 0.75s ease 0s;
+}
+#limpar:hover, #limpar:visited:hover {
+	color: black;
+	text-shadow: none;
+}
+#limpar:hover:after, #limpar:visited:hover:after {
+	height: 600%;
+}
+#limpar, #limpar:visited {
+	position: relative;
+	display: block;
+	margin: -10px auto 0;
+	padding: 14px 15px;
+	color: rgb(0, 0, 0);
+	font-size: 12px;
+	border-radius: 0;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+#limpar {
+	border: 2px solid #D24D57;
 }
 #posicao{
     position: absolute;

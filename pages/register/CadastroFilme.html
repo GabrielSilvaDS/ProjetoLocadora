@@ -4,13 +4,43 @@
     <meta charset="UTF-8">
     <title>Cadastro Filme</title>
     <link rel="stylesheet" href="/./css/cadastrosfilmes.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
+    <div id="posicao">
+        <div class="wrapper">
+            <div class="icon discord">
+                <div class="tooltip">Discord</div>
+                <a href="https://discord.gg/ws5WEvGjts" target="_blank" class="cor"><span><i class="fab fa-discord"></i></span></a>
+            </div>
+            <div class="icon twitter">
+                <div class="tooltip">Twitter</div>
+                <a href="https://twitter.com/AlbinaHiena" target="_blank" class="cor"><span><i class="fab fa-twitter"></i></span></a>
+            </div>
+            <div class="icon instagram">
+                <div class="tooltip">Instagram</div>
+                <a href="https://www.instagram.com/xscott_james/" target="_blank" class="cor"><span><i class="fab fa-instagram"></i></span></a>
+            </div>
+            <div class="icon github">
+                <div class="tooltip">GitHub</div>
+                <a href="https://github.com/GabrielSilvaDS" target="_blank" class="cor"><span><i class="fab fa-github"></i></span></a>
+            </div>
+            <div class="icon youtube">
+                <div class="tooltip">Youtube</div>
+                <a href="https://www.youtube.com/channel/UCGyrm_C8dkdsR9Ndip172cw" target="_blank" class="cor"></a><span><i class="fab fa-youtube"></i></span>
+            </div>
+        </div>
+    </div>
     <form>
         <div>
-            <a href="Cadastros.html"><img src="/./images/SETA Esquerda.png" alt="seta esquerda" width="50" height="50" id="esquerda"/></a>
+            <div class="text-box" class="voltar">
+                <a href="Cadastros.html" class="btn2 btn-white2 btn-animate2"  id="voltar">Voltar</a>
+            </div>
             <a href="../TelaPrincipal.html" id="monarca">Locadora Monarca</a>
-            <a href=""><img src="/./images/SETA Direita.png" alt="seta esquerda" width="50" height="50" id="direita"/></a>
+            <div class="text-box" class="avancar">
+                <a href="#" class="btn2 btn-white2 btn-animate2" id="avancar">Avançar</a>
+            </div>
         </div>
         <h3>Cadastro de Filmes</h3>
         <h4>Título</h4>
@@ -29,23 +59,30 @@
         <br><br>
         <h4>Prêmios:</h4>
         <br>
-        <input type="checkbox" id="Roteiro" name="Prêmio"> Melhor Roteiro
+        <div>
+            <input type="checkbox" id="Roteiro" name="Prêmio"> Melhor Roteiro
+        </div>
+        <div>
+            <input type="checkbox" id="Sonora" name="Prêmio"> Melhor Trilha Sonora
+        </div>
+        <div>
+            <input type="checkbox" id="Atuação" name="Prêmio"> Melhor Atuação
+        </div>
+        <div>
+            <input type="checkbox" id="Figurino" name="Prêmio"> Melhor Figurino
+        </div>
+        <div>
+            <input type="checkbox" id="Efeitos" name="Prêmio"> Melhor Efeito Visual
+        </div>
+        <div>
+            <input type="checkbox" id="Arte" name="Prêmio"> Melhor Direção de Arte
+        </div>
         <br>
-        <input type="checkbox" id="Sonora" name="Prêmio"> Melhor Trilha Sonora
-        <br>
-        <input type="checkbox" id="Atuação" name="Prêmio"> Melhor Atuação
-        <br>
-        <input type="checkbox" id="Figurino" name="Prêmio"> Melhor Figurino
-        <br>
-        <input type="checkbox" id="Efeitos" name="Prêmio"> Melhor Efeito Visual
-        <br>
-        <input type="checkbox" id="Arte" name="Prêmio"> Melhor Direção de Arte
-        <br><br>
         <h4>Descrição</h4>
         <textarea name="Descrição" id="Desc" cols="30" rows="5" class="campo"></textarea>
         <br><br>
-        <button><a href="../TelaPrincipal.html" class="botao">Cadastrar</a></button>
-        <input type="reset" value="Limpar" class="botaol">
+        <div class="col-md-3 col-sm-3 col-xs-6" id="cadastrar"> <a href="/pages/TelaPrincipal.html" class="btn btn-sm animated-button victoria-one" id="cadastrar2">Cadastrar</a> </div>
+        <input type="reset" value="Limpar" name="limpar" id="limpar">
     </form>
 </body>
 </html>
