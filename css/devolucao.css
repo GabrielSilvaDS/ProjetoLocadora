@@ -12,7 +12,7 @@
 }
 *{margin: 0; padding: 0; box-sizing: border-box;}
 body{
-    background-color: gray;
+    background-color: rgb(49, 49, 49);
 }
 form{
     box-shadow: 1px 1px 1px 1px black;
@@ -29,12 +29,12 @@ h3{
     position: fixed;
     top: 60px;
     left: 160px;
-    color: purple;
+    color: black;
     font-family: "Kalam";
 }
 h4{
     font-weight: bolder;
-    color: rgb(0, 0, 0);
+    color: rgb(201, 110, 37);
     font-family: "EBG";
 }
 input, text, textarea, select{
@@ -104,7 +104,7 @@ textarea:focus{
 }
 #monarca{
     font-family: "Dancing";
-    color: rgb(25, 0, 255);
+    color: red;
     font-size: 25px;
     position: fixed;
     top: 25px;

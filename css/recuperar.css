@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
 @font-face {
     font-family: "EBG";
     src: url(/fonts/EBGaramond-Regular.ttf);
@@ -6,101 +8,38 @@
     font-family: "Kalam";
     src: url(/fonts/Kalam-Regular.ttf);
 }
-@font-face {
-    font-family: "Dancing";
-    src: url(/fonts/DancingScript-VariableFont_wght.ttf);
-}
-*{margin: 0; padding: 0; box-sizing: border-box}
+*{margin: 0;padding: 0;box-sizing: border-box;}
 body{
     background-color: rgb(49, 49, 49);
 }
-.principal{
+form{
     box-shadow: 1px 1px 1px 1px black;
     background-color: white;
     max-width: 400px;
     width: 500%;
-    padding: 150px;
+    padding: 10px;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
-h3{
-    font-size: 20px;
-    position: fixed;
-    top: 60px;
-    left: 155px;
+form h3{
+    text-align: center;
     color: black;
     font-family: "EBG";
 }
-#monarca{
-    color: red;
-    font-size: 25px;
-    position: fixed;
-    top: 25px;
-    left: 115px;
-    font-family: "Dancing";
-}
-.btn2:link,
-.btn2:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 5px 10px;
-    font-size: 12px;
-    display: inline-block;
-    border-radius: 100px;
-    transition: all .2s;
-    position: absolute;
-}
-.btn2:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.658);
-}
-.btn2:active {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-.btn-white2 {
-    background-color: #D24D57;
-    color: rgb(255, 255, 255);
-}
-.btn2::after {
-    content: "";
-    display: inline-block;
-    height: 100%;
+form input[type=email]{
     width: 100%;
-    border-radius: 100px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all .4s;
+    height: 30px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    margin: 10px 0;
 }
-.btn-white2::after {
-    background-color: rgb(0, 0, 0);
+.email:focus{
+    background: rgb(233, 222, 222);
 }
-.btn2:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
-}
-#voltar{
-    top: 30px;
-    left: 15px;
-}
-#avancar{
-    top: 30px;
-    right: 15px;
-}
-.btn-animated {
-    animation: moveInBottom 5s ease-out;
-    animation-fill-mode: backwards;
-}
-#cadastrar2{
-    padding: 5px;
-    font-size: 12px;
-    width: 100px;
-    left: 5px;
-    top: -50px;
+form input[type=email]:focus{
+    outline: 0;
 }
 a.animated-button:link, a.animated-button:visited {
 	position: relative;
@@ -145,7 +84,7 @@ a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
 a.animated-button:link, a.animated-button:visited {
 	position: relative;
 	display: block;
-	margin: -10px auto 0;
+	margin: 15px auto 0;
 	padding: 14px 15px;
 	color: rgb(0, 0, 0);
 	font-size: 14px;
@@ -171,16 +110,4 @@ a.animated-button.victoria-one:after {
 	-ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
 	-webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
 	transform: translateX(-50%) translateY(-50%) rotate(-25deg);
-}
-#filmes{
-    position: fixed;
-    top: 180px;
-    left: 35%;
-    font-size: 20px;
-}
-#usuario{
-    position: fixed;
-    top: 240px;
-    left: 35%;
-    font-size: 20px;
 }

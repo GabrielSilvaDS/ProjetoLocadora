@@ -26,12 +26,17 @@ body{
     transform: translate(-50%, -50%);
 }
 h3{
-    font-size: 20px;
+    font-size: 25px;
     position: fixed;
     top: 60px;
-    left: 140px;
+    left: 165px;
     color: black;
     font-family: "EBG";
+}
+h4{
+    color: rgb(201, 110, 37);
+    width: 250px;
+    margin-left: -60px;
 }
 #monarca{
     color: red;
@@ -94,140 +99,6 @@ h3{
 .btn-animated {
     animation: moveInBottom 5s ease-out;
     animation-fill-mode: backwards;
-}
-#cadastrar2{
-    padding: 5px;
-    font-size: 12px;
-    width: 100px;
-    left: -5px;
-    top: -50px;
-}
-#locacao2{
-    padding: 5px;
-    font-size: 12px;
-    left: -5px;
-    width: 90px;
-    top: 10px;
-}
-#devolucao2{
-    padding: 5px;
-    font-size: 12px;
-    left: -10px;
-    width: 100px;
-    top: 20px;
-}
-#acervo2{
-    padding: 5px;
-    font-size: 12px;
-    left: 5px;
-    width: 70px;
-    top: 30px;
-}
-#sobre2{
-    padding: 5px;
-    font-size: 12px;
-    left: 10px;
-    top: 40px;
-}
-a.animated-button:link, a.animated-button:visited {
-	position: relative;
-	display: block;
-	margin: -10px auto 0;
-	padding: 14px 15px;
-	color: #fff;
-	font-size: 10px;
-	font-weight: bold;
-	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
-	overflow: hidden;
-	letter-spacing: .08em;
-	border-radius: 0;
-	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;
-}
-a.animated-button:link:after, a.animated-button:visited:after {
-	content: "";
-	position: absolute;
-	height: 0%;
-	left: 50%;
-	top: 50%;
-	width: 150%;
-	z-index: -1;
-	-webkit-transition: all 0.75s ease 0s;
-	-moz-transition: all 0.75s ease 0s;
-	-o-transition: all 0.75s ease 0s;
-	transition: all 0.75s ease 0s;
-}
-a.animated-button:link:hover, a.animated-button:visited:hover {
-	color: #FFF;
-	text-shadow: none;
-}
-a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
-	height: 600%;
-}
-a.animated-button:link, a.animated-button:visited {
-	position: relative;
-	display: block;
-	margin: -10px auto 0;
-	padding: 14px 15px;
-	color: rgb(0, 0, 0);
-	font-size: 14px;
-	border-radius: 0;
-	font-weight: bold;
-	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
-	overflow: hidden;
-	letter-spacing: .08em;
-	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;
-}
-a.animated-button.victoria-one {
-	border: 2px solid #D24D57;
-}
-a.animated-button.victoria-one:after {
-	background: #D24D57;
-	-moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
-	-ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
-	-webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
-	transform: translateX(-50%) translateY(-50%) rotate(-25deg);
-}
-#cadastros{
-    font-size: 20px;
-    position: fixed;
-    top: 100px;
-    left: 155px;
-}
-#locacao{
-    font-size: 20px;
-    position: fixed;
-    top: 130px;
-    left: 155px;
-}
-#devolucao{
-    font-size: 20px;
-    position: fixed;
-    top: 160px;
-    left: 155px;
-}
-#acervo{
-    font-size: 20px;
-    position: fixed;
-    top: 190px;
-    left: 155px;
-}
-#sobre{
-    font-size: 20px;
-    position: fixed;
-    top: 220px;
-    left: 155px;
 }
 #posicao{
     position: absolute;
