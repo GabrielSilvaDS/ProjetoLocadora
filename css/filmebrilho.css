@@ -17,7 +17,7 @@ body{
 form{
     box-shadow: 1px 1px 1px 1px black;
     background-color: white;
-    max-width: 400px;
+    max-width: 800px;
     width: 500%;
     padding: 95px;
     position: absolute;
@@ -28,7 +28,7 @@ form{
 h3{
     position: fixed;
     top: 60px;
-    left: 125px;
+    left: 27.5%;
     color: black;
     font-family: "Kalam";
 }
@@ -36,12 +36,6 @@ h4{
     font-weight: bolder;
     color: rgb(201, 110, 37);
     font-family: "EBG";
-}
-input, text, textarea, select{
-    border-radius: 5px;
-}
-input[type="text"]:focus{
-	background: rgb(204, 195, 195);
 }
 .btn2:link,
 .btn2:visited {
@@ -85,6 +79,10 @@ input[type="text"]:focus{
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
 }
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
 #voltar{
     top: 30px;
     left: 15px;
@@ -92,10 +90,6 @@ input[type="text"]:focus{
 #avancar{
     top: 30px;
     right: 15px;
-}
-.btn-animated {
-    animation: moveInBottom 5s ease-out;
-    animation-fill-mode: backwards;
 }
 .campo:focus{
     background: rgb(233, 222, 222);
@@ -106,41 +100,13 @@ input[type="text"]:focus{
     font-size: 25px;
     position: fixed;
     top: 25px;
-    left: 115px;
-}
-input[type="checkbox"]{
-    position: relative;
-    width: 40px;
-    height: 20px;
-    -webkit-appearance:none;
-    background: #c6c6c6;
-    outline: none;
-    border-radius: 20px;
-    box-shadow: inset 0 0 5px rgba(0,0,0,.2);
-}
-input:checked[type="checkbox"]{
-    background: #03a9f4;
-}
-input[type="checkbox"]:before{
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
-    top: 0;
-    left: 0;
-    background: #fff;
-    transform: scale(1.1);
-    box-shadow: 0 2px 5px rgba(0,0,0,.2);
-    transition: .5s;
-}
-input:checked[type="checkbox"]:before{
-    left: 20px;
+    left: 39%;
 }
 a.animated-button:link, a.animated-button:visited {
 	position: relative;
 	display: block;
-	margin: -10px auto 0;
+    width: 200px;
+	margin: -14px auto 0;
 	padding: 14px 15px;
 	color: #fff;
 	font-size: 10px;
@@ -180,8 +146,8 @@ a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
 a.animated-button:link, a.animated-button:visited {
 	position: relative;
 	display: block;
-	margin: -10px auto 0;
-	padding: 14px 15px;
+	margin: 10px auto 0;
+	padding: 10px 10px;
 	color: rgb(0, 0, 0);
 	font-size: 12px;
 	border-radius: 0;
@@ -207,79 +173,15 @@ a.animated-button.victoria-one:after {
 	-webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
 	transform: translateX(-50%) translateY(-50%) rotate(-25deg);
 }
-#cadastrar{
+#detalhes{
     font-size: 20px;
     position: fixed;
-    top: 85%;
-    left: 60px;
+    top: 90%;
+    left: 92px;
 }
-#limpar{
-    font-family: "EBG";
+#locar{
     font-size: 20px;
     position: fixed;
-    top: 35px;
-    left: 110px;
-}
-#limpar, #limpar:visited {
-	position: relative;
-	display: block;
-	margin: -10px auto 0;
-	padding: 14px 15px;
-	color: #fff;
-	font-size: 10px;
-	font-weight: bold;
-	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
-	overflow: hidden;
-	letter-spacing: .08em;
-	border-radius: 0;
-	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;
-}
-#limpar:after, #limpar:after {
-	content: "";
-	position: absolute;
-	height: 0%;
-	left: 50%;
-	top: 50%;
-	width: 150%;
-	z-index: -1;
-	-webkit-transition: all 0.75s ease 0s;
-	-moz-transition: all 0.75s ease 0s;
-	-o-transition: all 0.75s ease 0s;
-	transition: all 0.75s ease 0s;
-}
-#limpar:hover, #limpar:visited:hover {
-	color: black;
-	text-shadow: none;
-}
-#limpar:hover:after, #limpar:visited:hover:after {
-	height: 600%;
-}
-#limpar, #limpar:visited {
-	position: relative;
-	display: block;
-	margin: -10px auto 0;
-	padding: 14px 15px;
-	color: rgb(0, 0, 0);
-	font-size: 12px;
-	border-radius: 0;
-	font-weight: bold;
-	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
-	overflow: hidden;
-	letter-spacing: .08em;
-	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;
-}
-#limpar {
-	border: 2px solid #D24D57;
+    top: 90%;
+    left: 63%;
 }
